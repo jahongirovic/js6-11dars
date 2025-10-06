@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#212529] min-h-screen py-[146px]">
+  <figure class="flex justify-center">
+    <img src="./logo.png" alt="" />
+  </figure>
+
+  <form action="" class="py-[49px] container max-w-[90%] mx-auto">
+    <input type="text" placeholder="Search your pokemon" class="input placeholder:text-gray-700" id="searchInput" />
+    <select name="" class="select" id="">
+      <option value="">all</option>
+      <option value="Grass">Grass</option>
+      <option value="grass">Fire</option>
+    </select>
+    <select name="" class="select" id="">
+      <option value="all">sort</option>
+    </select>
+    <button class="btn btn-success min-w-[230px]">search</button>
+  </form>
+
+  <div id="cards" class="container max-w-[90%] mx-auto flex flex-wrap gap-[10px]">
+    <div class="bg-[#FFFF00] rounded-[10px] min-w-[250px] overflow-hidden text-center">
+
+    </div>
+  </div>
+
+  <script type="module" src="./pokemons.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
